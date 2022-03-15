@@ -1,6 +1,7 @@
 <template>
     <lightning-card  title="Word Reverse">
-        <lightning-input type="text" label="Enter some text" onkeyup={reverseWord}></lightning-input>
+        <lightning-input type="text" label="Enter some text" onkeyup={changeHandler}></lightning-input>
+        <button onclick={reverseWord}>Reverse</button>
         <div>{reversedWord}</div>
     </lightning-card>
 </template>
